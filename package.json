@@ -1,6 +1,6 @@
 {
   "name": "@baselinecode/npx-project",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NPX project generator",
   "keywords": [
     "node",
@@ -10,7 +10,7 @@
   "repository": {
     "url": "https://github.com/Xmaxer/baselinecode-npx-project"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Kevin Jakubauskas",
   "type": "commonjs",
   "bin": {
