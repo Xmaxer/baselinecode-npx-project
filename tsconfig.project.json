@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "noUnusedLocals": true,
+    "rootDir": ".",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+    "noEmit": true
+  },
+  "include": ["src"]
+}

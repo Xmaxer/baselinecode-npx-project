@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.esbuild.json"
+    },
+    {
+      "path": "./tsconfig.project.json"
+    }
+  ]
+}

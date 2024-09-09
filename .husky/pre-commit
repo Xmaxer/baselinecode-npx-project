@@ -1,0 +1,1 @@
+npm run prettier:ci && npm run lint:ci && npm run typescript:check

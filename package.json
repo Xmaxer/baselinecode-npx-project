@@ -1,0 +1,65 @@
+{
+  "name": "@baselinecode/npx-project",
+  "version": "1.0.0",
+  "description": "NPX project generator",
+  "keywords": [
+    "node",
+    "template",
+    "baselinecode"
+  ],
+  "repository": {
+    "url": "https://github.com/Xmaxer/baselinecode-npx-project"
+  },
+  "license": "ISC",
+  "author": "Kevin Jakubauskas",
+  "type": "commonjs",
+  "bin": {
+    "@baselinecode/npx-project": "./main.js"
+  },
+  "scripts": {
+    "build": "tsx build.mts",
+    "lint": "eslint . --max-warnings 0 --fix",
+    "lint:ci": "eslint . --max-warnings 0",
+    "prepare": "husky",
+    "prettier": "prettier --write .",
+    "prettier:ci": "prettier --check .",
+    "publish:npm": "cd dist && npm publish",
+    "test": "rm -rf test-project && tsx src/main.mts -n test-project",
+    "typescript:check": "tsc --project tsconfig.esbuild.json && tsc --project tsconfig.project.json",
+    "version-bump:major": "npm version major --commit-hooks false",
+    "version-bump:minor": "npm version minor --commit-hooks false",
+    "version-bump:patch": "npm version patch --commit-hooks false"
+  },
+  "dependencies": {
+    "commander": "12.1.0",
+    "cross-spawn": "7.0.3",
+    "yauzl": "3.1.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.1.0",
+    "@eslint/js": "9.10.0",
+    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "@types/cross-spawn": "6.0.6",
+    "@types/node": "22.5.4",
+    "@types/yauzl": "2.10.3",
+    "@typescript-eslint/eslint-plugin": "8.4.0",
+    "@typescript-eslint/parser": "8.4.0",
+    "esbuild": "0.23.1",
+    "eslint": "9.10.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "husky": "9.1.5",
+    "prettier": "3.3.3",
+    "prettier-plugin-packagejson": "2.5.2",
+    "tsx": "4.19.0",
+    "typescript": "5.5.4"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": "*",
+    "yarn": "Use npm"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+    "noEmit": true
+  },
+  "include": ["build.mts"]
+}
