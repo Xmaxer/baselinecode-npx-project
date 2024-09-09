@@ -1,6 +1,6 @@
-Heavily opinionated NodeJS template.
+Heavily opinionated NPX project template.
 
-Creates an empty NodeJS project with:
+Creates an empty NPX command compatible project with:
 
 - Typescript
 - TS Paths
@@ -9,4 +9,5 @@ Creates an empty NodeJS project with:
 - ESLint
 - Husky pre commit
 - Node 22 (Not configurable atm)
-- Actual template code is maintained and downloaded from https://github.com/Xmaxer/baselinecode-node-project-template
+- Uses command to get inputs
+- Actual template code is maintained and downloaded from https://github.com/Xmaxer/baselinecode-npx-project-template
