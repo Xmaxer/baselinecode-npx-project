@@ -143,7 +143,7 @@ function getDownloadedFilePath(fileName: string): string {
   runInDirectory('npm', 'install');
   runInDirectory('npm', 'run', 'prettier');
   runInDirectory('npm', 'add', '.');
-  runInDirectory('npm', 'commit', '-m', '"Initial commit"');
+  runInDirectory('git', 'commit', '-m', '"Initial commit"');
 
   console.log(`Project created in ${projectDir}`);
 })().then(() => {
