@@ -1,6 +1,6 @@
 {
   "name": "@baselinecode/npx-project",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NPX project generator",
   "keywords": [
     "node",
