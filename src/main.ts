@@ -141,7 +141,7 @@ function getDownloadedFilePath(fileName: string): string {
 
   runInDirectory('git', 'init');
   runInDirectory('npm', 'install');
-  runInDirectory('npm', 'run', 'install');
+  runInDirectory('npm', 'run', 'prettier');
   runInDirectory('npm', 'add', '.');
   runInDirectory('npm', 'commit', '-m', '"Initial commit"');
 
