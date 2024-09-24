@@ -21,10 +21,6 @@ program.requiredOption(
   'The URL of the zipped project to download',
 );
 program.option('-pu, --project-url <string>', 'The repository of the template');
-program.option(
-  '-par, --path-to-remove <string>',
-  'The path to exclude from zip extraction',
-);
 
 program.parse();
 
@@ -32,7 +28,6 @@ const options = program.opts();
 const projectName = options.name;
 const templateUrlToDownload = options.templateUrl;
 const projectUrl = options.projectUrl;
-const pathToRemove = options.pathToRemove;
 
 const currentDir = process.cwd();
 const projectDir = path.resolve(currentDir, projectName);
@@ -127,7 +122,6 @@ function getDownloadedFilePath(fileName: string): string {
   }
 
   newConfigFile.templateUrl = templateUrlToDownload;
-  newConfigFile.pathToRemove = pathToRemove || '';
 
   fs.writeFileSync(packageJsonPath, JSON.stringify(newPackageJson, null, 2));
   fs.writeFileSync(configFilePath, JSON.stringify(newConfigFile, null, 2));
